@@ -1,0 +1,50 @@
+
+
+.note::before {
+    content: "🥰";
+}
+
+.note::after {
+    content: "😄";
+}
+
+h2::before {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 2px;
+    background: blue;
+    margin-bottom: 3px;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 2px;
+    background: blue;
+    margin-top: 3px;
+}
+
+
+.card {
+    position: relative;
+    width: 250px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: antiquewhite;
+}
+
+.card::after {
+    content: "sold";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: crimson;
+    padding: 4px 10px;
+    color: white;
+    font-size: 17px;
+    border-radius: 4px;
+    /* transform: rotate(-30deg);*/
+} 

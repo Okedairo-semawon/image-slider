@@ -1,0 +1,25 @@
+/* pseudo class not */
+p:not(.skip) {
+    color: aqua;
+}
+
+/* pseudo clas has */
+
+div:has(img) {
+    border: 2px solid burlywood;
+
+}
+
+li::marker {
+    color: brown;
+}
+
+li:first-child {
+    font-family: cursive;
+    color: blue;
+}
+
+li:last-child {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: red;
+}

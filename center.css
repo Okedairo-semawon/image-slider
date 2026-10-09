@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/* .box {
+    width: 200px;
+    margin: auto;
+    background-color: aquamarine;
+} */
+
+/* Using margin auto - this method centers the div horizontally */
+
+/* Using flexbox */
+/* .container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+} */
+
+.card {
+    display: flex;
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    justify-content: center; 
+    
+
+}
+
+p {
+    margin-top: 20px;
+}
+
+/* using grid to center a div  */
+/* .container {
+    display: grid;
+    place-content: center;
+   height: 100vh;
+} */
+
+/* Absolute positioning */
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: aqua;
+}
