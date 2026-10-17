@@ -28,7 +28,7 @@ const images = [
     "images/freepik__a-nigerian-traditional-wear-with-black-background__87258.png",
     "images/freepik__a-tailor-back-ground-with-black-background__69765.png",
     "images/freepik__suits-with-a-black-background__13120.png",
-    "images/WhatsApp Image 2026-03-25 at 10.07.10 PM.jpeg",
+    "images/WhatsImage 2026-03-25 at 10.07.10 PM.jpeg",
     "image/ solar-services-mages copy.jpeg"
 ]
 
@@ -37,6 +37,8 @@ let currentIndex = 0;
 // change  the main image
 
 function showImage(index) {
+
+currentIndex = index;
 
 // fade out
 mainImage.style.opacity = 0
@@ -55,7 +57,7 @@ thumbnails.forEach((thumbnail) => {
 });
 
 // add active class to selected thumbnails
-thumbnails[currentIndex].classList.add('active')
+thumbnails[currentIndex].classList.add('active');
 };
 
 // click of the thumbnail
@@ -64,3 +66,34 @@ thumbnails.forEach((thumbnail, index) => {
         showImage(index)
     });
 });
+
+// Next button
+
+nextBtn.addEventListener("click", () => {
+    currentIndex++;
+
+    // when it gets to the last image 
+    if (currentIndex >= images.length) {
+        currentIndex = 0;
+    }
+
+    showImage(currentIndex);
+})
+
+// prev button
+prevBtn.addEventListener("click", () => {
+    currentIndex--;
+
+    // when it's at the first image 
+
+    if(currentIndex < 0) {
+        currentIndex = image.length - 1;
+    }
+    showImage(currentIndex);
+})
+
+a = 10;
+b= 10
+
+console.log(a*b)
+// DECREMENT 7 
